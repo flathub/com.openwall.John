@@ -73,6 +73,14 @@
                 {
                     "type": "file",
                     "path": "com.openwall.John.png"
+                },
+                {
+                    "type": "file",
+                    "path": "64.png"
+                },
+                {
+                    "type": "file",
+                    "path": "128.png"
                 }
             ],
             "post-install": [
@@ -84,7 +92,9 @@
                 "mkdir -p /app/share/bash-completion/completions",
                 "cp ../run/john.*_completion /app/share/bash-completion/completions",
                 "###### Environment ######",
-                "install -Dm644 ../com.openwall.John.png /app/share/icons/com.openwall.John.png",
+                "install -Dm644 ../com.openwall.John.png /app/share/icons/hicolor/256x256/apps/com.openwall.John.png",
+                "install -Dm644 ../128.png               /app/share/icons/hicolor/128x128/apps/com.openwall.John.png",
+                "install -Dm644 ../64.png                /app/share/icons/hicolor/64x64/apps/com.openwall.John.png",
                 "install -Dm644 ../com.openwall.John.desktop /app/share/applications/com.openwall.John.desktop",
                 "install -Dm644 ../com.openwall.John.appdata.xml /app/share/appdata/com.openwall.John.appdata.xml"
             ]
