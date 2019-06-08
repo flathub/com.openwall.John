@@ -8,7 +8,7 @@ Using the Flathub repository
 To install applications that are hosted on Flathub, use the following:
 ```
 flatpak remote-add flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak install flathub org.gnome.Recipes
+flatpak install flathub com.openwall.John
 ```
 
 For more information and more applications see https://flathub.org
