@@ -1,0 +1,21 @@
+From 9d1c30baf94b2fdcde6906c9f449109133f38a0b Mon Sep 17 00:00:00 2001
+From: Ben Holmes <bholmes@interactive.com.au>
+Date: Tue, 30 Jun 2020 22:13:03 +1000
+Subject: [PATCH] Need stdexcept in iterator.h
+
+---
+ src/librexgen/iterator/iterator.h | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/src/librexgen/iterator/iterator.h b/src/librexgen/iterator/iterator.h
+index 5b99c77..eabf264 100644
+--- a/src/librexgen/iterator/iterator.h
++++ b/src/librexgen/iterator/iterator.h
+@@ -26,6 +26,7 @@
+ #include <librexgen/osdepend.h>
+ #include <librexgen/state/serializablestate.h>
+ #include <librexgen/state/invaliditeratoridexception.h>
++#include <stdexcept>
+ #include <memory>
+ 
+ #ifdef __cplusplus
