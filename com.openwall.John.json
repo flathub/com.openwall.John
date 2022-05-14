@@ -1,7 +1,7 @@
 {
     "id": "com.openwall.John",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "18.08",
+    "runtime-version": "21.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "john",
     "finish-args": [
@@ -47,7 +47,7 @@
                 {
                     "type": "archive",
                     "url": "https://github.com/magnumripper/JohnTheRipper/archive/1.9.0-Jumbo-1.zip",
-                    "sha256": "48d30775dd3324b5a915c11c2fd52c21621377f76ea007c3982edb825c7f3442"
+                    "sha256": "a99e1f892a0756a6e8af5cca8a3c6a3cc497c8225f2f191811c66b18673526a6"
                 },
                 {
                     "type": "patch",
@@ -56,6 +56,10 @@
                 {
                     "type": "patch",
                     "path": "patches/use-regex-1.4.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "patches/john-align-gcc11.patch"
                 },
                 {
                     "type": "file",
