@@ -1,9 +1,10 @@
 {
     "id": "com.openwall.John",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "18.08",
+    "runtime-version": "20.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "john",
+    "tags": [ "v1-rolling" ],
     "finish-args": [
         "--filesystem=home"
     ],
@@ -18,20 +19,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://www.tcpdump.org/release/libpcap-1.8.1.tar.gz",
-                    "sha256": "673dbc69fdc3f5a86fb5759ab19899039a8e5e6c631749e48dcd9c6f0c83541e"
-                }
-            ]
-        },
-        {
-            "name": "librexgen",
-            "buildsystem": "cmake",
-            "subdir": "./src",
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/teeshop/rexgen/archive/1.4.0.zip",
-                    "sha256": "a7903c21e20e0817b7c760bd13fcff802839b71c1f95db926cf52bb93f13f69d"
+                    "url": "https://www.tcpdump.org/release/libpcap-1.10.0.tar.gz",
+                    "sha256": "8d12b42623eeefee872f123bd0dc85d535b00df4d42e865f993c40f7bfc92b1e"
                 }
             ]
         },
@@ -45,22 +34,17 @@
             ],
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://github.com/magnumripper/JohnTheRipper/archive/1.9.0-Jumbo-1.zip",
-                    "sha256": "48d30775dd3324b5a915c11c2fd52c21621377f76ea007c3982edb825c7f3442"
+                    "type": "git",
+                    "url": "https://github.com/openwall/john.git",
+                    "branch": "bleeding-jumbo"
                 },
                 {
                     "type": "patch",
                     "path": "patches/confined-system-wide-build.patch"
                 },
                 {
-                    "type": "patch",
-                    "path": "patches/use-regex-1.4.patch"
-                },
-                {
                     "type": "file",
-                    "path": "build.sh",
-                    "dest-filename": "build.sh"
+                    "path": "build.sh"
                 },
                 {
                     "type": "file",
