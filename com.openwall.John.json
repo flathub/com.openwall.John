@@ -1,7 +1,7 @@
 {
     "id": "com.openwall.John",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "21.08",
+    "runtime-version": "23.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "john",
     "finish-args": [
@@ -18,8 +18,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://www.tcpdump.org/release/libpcap-1.8.1.tar.gz",
-                    "sha256": "673dbc69fdc3f5a86fb5759ab19899039a8e5e6c631749e48dcd9c6f0c83541e"
+                    "url": "https://www.tcpdump.org/release/libpcap-1.10.4.tar.gz",
+                    "sha256": "ed19a0383fad72e3ad435fd239d7cd80d64916b87269550159d20e47160ebe5f"
                 }
             ]
         },
@@ -30,8 +30,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/teeshop/rexgen/archive/1.4.0.zip",
-                    "sha256": "a7903c21e20e0817b7c760bd13fcff802839b71c1f95db926cf52bb93f13f69d"
+                    "url": "https://github.com/janstarke/rexgen/archive/2.1.5.zip",
+                    "sha256": "c176cc7c08bc20fd6493f26bf0cd350562cdd96e3b507b08738dd442a17fa441"
                 }
             ]
         },
@@ -45,21 +45,13 @@
             ],
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://github.com/magnumripper/JohnTheRipper/archive/1.9.0-Jumbo-1.zip",
-                    "sha256": "a99e1f892a0756a6e8af5cca8a3c6a3cc497c8225f2f191811c66b18673526a6"
+                    "type": "git",
+                    "url": "https://github.com/openwall/john.git",
+                    "commit": "39db7dd63e3fefb343c3dbb72eaa5c7599b6c298"
                 },
                 {
                     "type": "patch",
                     "path": "patches/confined-system-wide-build.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "patches/use-regex-1.4.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "patches/john-align-gcc11.patch"
                 },
                 {
                     "type": "file",
