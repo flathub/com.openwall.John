@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright (c) 2019 Claudio André <claudioandre.br at gmail.com> -->
+<!-- Copyright (c) 2019-2023 Claudio André <claudioandre.br at gmail.com> -->
 <component type="console-application">
   <id>com.openwall.John</id>
   <metadata_license>GFDL-1.3</metadata_license>
@@ -10,20 +10,19 @@
   <summary>John the Ripper "Jumbo" password cracker</summary>
   <description>
     <p>
-       John the Ripper is a fast password cracker. Its primary purpose is to
-       detect weak Unix passwords. Besides several crypt(3) password hash types,
-       supported out of the box are Windows LM hashes, plus lots of other hashes
-       and ciphers.
-
-       Read more at:
-       - github.com/magnumripper/JohnTheRipper
-
-       This version integrates lots of contributed patches, including dynamic
-       expressions, has fallback for CPU SIMD extensions and for OMP, moreover,
-       has regex, mask, and prince modes available.
+      [Openwall's](https://openwall.com/) John the Ripper (JtR) is a fast password cracker,
+      currently available for many flavors of Unix and for Windows. Its primary
+      purpose is to detect weak Unix passwords. Besides several crypt(3) password hash
+      types most commonly found on various Unix systems, supported out of the box are
+      Windows LM hashes, various macOS password hashes, as well as many
+      non-hashes such as SSH private keys, encrypted filesystems such as macOS .dmg files
+      and "sparse bundles", encrypted archives such as ZIP, RAR, and 7z,
+      encrypted document files such as PDF and Microsoft Office's, plus lots of
+      other hashes and ciphers.
     </p>
   </description>
 
+  <icon type="remote">https://openwall.info/wiki/_media/john/1.9.0J1/com.openwall.john.png</icon>
   <screenshots>
     <screenshot type="default">
       <image>https://openwall.info/wiki/_media/john/help.png</image>
@@ -34,11 +33,10 @@
   </screenshots>
 
   <url type="homepage">https://www.openwall.com/john/</url>
-  <url type="bugtracker">https://github.com/magnumripper/JohnTheRipper/issues</url>
-  <url type="donation">https://www.zerodayclothing.com/openwall_store.php</url>
+  <url type="bugtracker">https://github.com/openwall/john/issues</url>
 
   <developer_name>Openwall and others</developer_name>
-  <update_contact>claudioandre.br@gmail.com</update_contact>
+  <update_contact>https://github.com/openwall/john-packages/issues</update_contact>
 
   <launchable type="desktop-id">com.openwall.John.desktop</launchable>
   <provides>
@@ -68,6 +66,13 @@
           alone is still sufficient or where (cross-)compiling jumbo for a given
           target system is too difficult or (as a first step in) porting John the
           Ripper to an unusual new platform.
+        </p>
+      </description>
+    </release>
+    <release type="stable" version="1.9J1+" date="2023-09-20" urgency="high">
+      <description>
+        <p>
+         This is a maintenance release that contains a lot of bugfixes.
         </p>
       </description>
     </release>
