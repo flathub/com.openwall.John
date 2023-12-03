@@ -54,6 +54,10 @@
                     "path": "patches/confined-system-wide-build.patch"
                 },
                 {
+                    "type": "patch",
+                    "path": "patches/issue-9.patch"
+                },
+                {
                     "type": "file",
                     "path": "build.sh",
                     "dest-filename": "build.sh"
