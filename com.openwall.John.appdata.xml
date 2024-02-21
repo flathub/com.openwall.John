@@ -69,13 +69,10 @@
         </p>
       </description>
     </release>
-    <release type="stable" version="1.9J1+2310.1" date="2023-12-03" urgency="high">
+    <release type="stable" version="1.9J1+" date="2023-09-20" urgency="high">
       <description>
         <p>
          This is a maintenance release that contains a lot of bugfixes.
-
-         2310.1
-         Fix: the compiler emmits AVX512 instructions before CPU fallback chain acts.
         </p>
       </description>
     </release>
