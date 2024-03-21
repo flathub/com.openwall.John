@@ -34,7 +34,7 @@ Architecture="$(uname -m)"
 OpenMP, OpenCL=No
 Optional Libraries=Yes
 Regex, OpenMPI, Experimental Code, ZTEX=No
-Version="1.9J1+"
+Version="1.9J1+2404"
 EOF
 
     )
