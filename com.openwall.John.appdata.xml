@@ -55,20 +55,6 @@
   </provides>
 
   <releases>
-    <release type="stable" version="1.9.0J1" date="2019-05-14" urgency="high">
-      <description>
-        <p>
-          This is a major release (after almost 6 years since the 1.8.0 core
-          release), the community's progress in development of jumbo has been so
-          much greater that any changes I make to core are relatively small, as is
-          core itself.  Yet they are important.  Besides serving as the core for
-          jumbo, other uses of this tree include cases where core's functionality
-          alone is still sufficient or where (cross-)compiling jumbo for a given
-          target system is too difficult or (as a first step in) porting John the
-          Ripper to an unusual new platform.
-        </p>
-      </description>
-    </release>
     <release type="stable" version="1.9J1+" date="2023-09-20" urgency="high">
       <description>
         <p>
