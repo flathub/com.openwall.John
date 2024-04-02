@@ -6,6 +6,6 @@ Name=John the Ripper Community Edition
 GenericName=John the Ripper Jumbo
 Comment=John the Ripper password security auditing and recovery tool
 TryExec=john
-Exec=john --list=build-info && printf "%s " "Press enter to continue..." && read ans
+Exec=run-john.sh
 Icon=com.openwall.John
-Categories=Security
+Categories=System;Security
