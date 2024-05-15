@@ -73,33 +73,27 @@
   </provides>
 
   <releases>
-    <release type="stable" version="1.9J1+2404" date="2024-04-01" urgency="high">
+    <release type="stable" version="1.9J1+2410" date="2024-09-25" urgency="high">
       <description>
         <p>
-          This is a maintenance release:
-        </p>
-
-        <p>
-          Based on upstream commit f9fedd238b0b1d69181c1fef033b85c787e96e57.
+          This is a bug fix, renovate, and update release intended to provide a
+          modernized version to end users. There have been over 1300 tree
+          commits since 1.9.0-jumbo-1 was released.
         </p>
 
         <ul>
-          <li>Add arm64 Docker image (with NVIDIA GPU support);</li>
-          <li>Add new formats and/or implementations;</li>
-            <li>  Armory wallet, Keplr wallet, Argon2 OpenCL.</li>
-          <li>*2john improvements;</li>
-            <li>  Add a modern version of pdf2john (.py; Python 3).</li>
-          <li>Improve OpenCL detection;</li>
-            <li>  Start using dynamic OpenCL binding (dynamically load OpenCL library);</li>
-            <li>  Add Khronos Group OpenCL header files (use this local copy of the OpenCL headers);</li>
-          <li>Some random optimizations here and there;</li>
-          <li>Minor documentations tweaks.</li>
+          <li>New `Combinator` and `Shuffle` external modes;</li>
+          <li>Support for the new SM3 hash function;</li>
+          <li>Support for Astra Linux crypt variants (GOST R 34.11-94 or GOST R 34.11-2012);</li>
+          <li>Bugs fixed in PDF format;</li>
+          <li>Based on upstream commit 3e2282a936b1461fe16625bb41861540e16b8ca3;</li>
+          <li>Named 1.9J1+2410, last committed Sep 25, 2024.</li>
         </ul>
 
+        <p>All binaries support SIMD:</p>
         <ul>
-          <li>All binaries support SIMD:</li>
-            <li>  The aarch64 binaries support ASIMD</li>
-            <li>  The X86_64 binaries support AVX, AVX2, and AVX512BW</li>
+          <li>The aarch64 binaries support ASIMD;</li>
+          <li>The X86_64 binaries support AVX, AVX2, and AVX512BW.</li>
         </ul>
       </description>
     </release>
