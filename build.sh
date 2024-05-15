@@ -27,7 +27,7 @@ function save_build_info() {
     cd .. || exit 1
 
     cat <<-EOF > run/Defaults
-#   File that lists how the build (binaries) were made
+#   This file lists how the build (binaries) were made
 [Build Configuration]
 System Wide Build=Yes
 Architecture="$(uname -m)"
@@ -35,6 +35,10 @@ OpenMP, OpenCL=No
 Optional Libraries=Yes
 Regex, OpenMPI, Experimental Code, ZTEX=No
 Version="1.9J1+2404"
+#
+#   The john (upstream) repository reference
+[Repository john]
+Commit="f9fedd238b0b1d69181c1fef033b85c787e96e57"
 EOF
 
     )
