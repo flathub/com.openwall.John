@@ -27,14 +27,18 @@ function save_build_info() {
     cd .. || exit 1
 
     cat <<-EOF > run/Defaults
-#   File that lists how the build (binaries) were made
+#   This file lists how the build (binaries) were made
 [Build Configuration]
 System Wide Build=Yes
 Architecture="$(uname -m)"
 OpenMP, OpenCL=No
 Optional Libraries=Yes
 Regex, OpenMPI, Experimental Code, ZTEX=No
-Version="1.9J1+2404"
+Version="1.9J1+2410"
+#
+#   The john (upstream) repository reference
+[Repository john]
+Commit="3e2282a936b1461fe16625bb41861540e16b8ca3"
 EOF
 
     )
@@ -49,6 +53,7 @@ function clean_image() {
 }
 
 # Build options (system wide, disable checks, etc.)
+arch=$(uname -m)
 SYSTEM_WIDE='--with-systemwide --enable-rexgen'
 X86_REGULAR="--disable-native-tests --disable-opencl $SYSTEM_WIDE"
 X86_NO_OPENMP="--disable-native-tests --disable-opencl $SYSTEM_WIDE --disable-openmp"
