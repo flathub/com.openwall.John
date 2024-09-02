@@ -1,9 +1,11 @@
 {
+    "$schema": "https://raw.githubusercontent.com/flatpak/flatpak-builder/main/data/flatpak-manifest.schema.json",
     "id": "com.openwall.John",
     "runtime": "org.freedesktop.Platform",
     "runtime-version": "23.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "john",
+    "tags": [ "1.9J1+2404" ],
     "finish-args": [
         "--filesystem=home"
     ],
