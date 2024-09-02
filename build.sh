@@ -55,8 +55,8 @@ function clean_image() {
 # Build options (system wide, disable checks, etc.)
 arch=$(uname -m)
 SYSTEM_WIDE='--with-systemwide --enable-rexgen'
-X86_REGULAR="--disable-native-tests --disable-opencl $SYSTEM_WIDE"
-X86_NO_OPENMP="--disable-native-tests --disable-opencl $SYSTEM_WIDE --disable-openmp"
+X86_REGULAR="--disable-native-tests $SYSTEM_WIDE"
+X86_NO_OPENMP="--disable-native-tests $SYSTEM_WIDE --disable-openmp"
 
 OTHER_REGULAR="$SYSTEM_WIDE"
 OTHER_NO_OPENMP="$SYSTEM_WIDE --disable-openmp"
