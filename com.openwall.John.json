@@ -5,7 +5,7 @@
     "runtime-version": "24.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "john",
-    "tags": [ "1.9J1+2410" ],
+    "tags": [ "1.9.1-ce" ],
     "finish-args": [
         "--filesystem=home",
         "--share=ipc",
@@ -119,7 +119,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/openwall/john.git",
-                    "commit": "3e2282a936b1461fe16625bb41861540e16b8ca3"
+                    "commit": "126b2a4814f24f2ff6486e2c050ecb17072be7ba"
                 },
                 {
                     "type": "patch",

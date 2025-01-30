@@ -10,7 +10,7 @@
 #                                                       | |   | |
 #                                                       |_|   |_|
 #
-# Copyright (c) 2019-2024 Claudio André <dev at claudioandre.slmail.me>
+# Copyright (c) 2019-2025 Claudio André <dev at claudioandre.slmail.me>
 #
 # This program comes with ABSOLUTELY NO WARRANTY; express or implied.
 #
@@ -34,11 +34,11 @@ Architecture="$(uname -m)"
 OpenMP, OpenCL=No
 Optional Libraries=Yes
 Regex, OpenMPI, Experimental Code, ZTEX=No
-Version="1.9J1+2410"
+Version="1.9.1-ce"
 #
 #   The john (upstream) repository reference
 [Repository john]
-Commit="3e2282a936b1461fe16625bb41861540e16b8ca3"
+Commit="126b2a4814f24f2ff6486e2c050ecb17072be7ba"
 EOF
 
     )

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright (c) 2019-2024 Claudio André <dev at claudioandre.slmail.me> -->
+<!-- Copyright (c) 2019-2025 Claudio André <dev at claudioandre.slmail.me> -->
 <component type="console-application">
   <id>com.openwall.John</id>
   <metadata_license>GFDL-1.3</metadata_license>
@@ -73,21 +73,26 @@
   </provides>
 
   <releases>
-    <release type="stable" version="1.9J1+2410" date="2024-09-25" urgency="high">
+    <release type="stable" version="1.9.1-ce" date="2025-02-01" urgency="high">
+      <url type="details">https://github.com/openwall/john-packages/pull/711</url>
       <description>
         <p>
           This is a bug fix, renovate, and update release intended to provide a
-          modernized version to end users. There have been over 1300 tree
+          modernized version to end users. There have been over 1500 tree
           commits since 1.9.0-jumbo-1 was released.
         </p>
 
         <ul>
-          <li>New `Combinator` and `Shuffle` external modes;</li>
-          <li>Support for the new SM3 hash function;</li>
-          <li>Support for Astra Linux crypt variants (GOST R 34.11-94 or GOST R 34.11-2012);</li>
-          <li>Bugs fixed in PDF format;</li>
-          <li>Based on upstream commit 3e2282a936b1461fe16625bb41861540e16b8ca3;</li>
-          <li>Named 1.9J1+2410, last committed Sep 25, 2024.</li>
+          <li>Add PDF OpenCL;</li>
+          <li>KeePass: support KDBX4 database and Argon2;</li>
+          <li>Add partial support for EC SSH keys encrypted with AES-256-CBC;</li>
+          <li>Add a modern version of bitlocker2john (.py; Python 3);</li>
+          <li>Add a modern version of fvde2john (.py; Python 3);</li>
+          <li>Add oracle2john.py (.py; Python 3)</li>
+          <li>Drop old AES-NI code in favor of AES code from mbedTLS;</li>
+          <li>Upgrade Unicode to version 16.0.0;</li>
+          <li>Based on upstream commit 126b2a4814f24f2ff6486e2c050ecb17072be7ba;</li>
+          <li>Named 1.9.1-ce, last committed Jan 28, 2025.</li>
         </ul>
 
         <p>All binaries support SIMD:</p>
